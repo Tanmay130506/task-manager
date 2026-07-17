@@ -5,6 +5,7 @@ taskmanager.db
 .venv/
 venv/
 env/
+.env
 
 # Ignore Python cache files
 __pycache__/
