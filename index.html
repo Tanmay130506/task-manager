@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="loginView">
+    <h2>Login</h2>
+
+    <input id="usernameInput" type="text" placeholder="Username">
+    <input id="passwordInput" type="password" placeholder="Password">
+
+    <button type="button" id="loginBtn">Login</button>
+
+    <p id="loginError"></p>
+
+    <!-- ✅ ADD REGISTER SECTION HERE -->
+
+    <h3>Register</h3>
+
+    <input id="regUsername" type="text" placeholder="Username">
+    <input id="regPassword" type="password" placeholder="Password">
+
+    <select id="regRole">
+        <option value="employee">Employee</option>
+        <option value="manager">Manager</option>
+    </select>
+
+    <button type="button" id="registerBtn">Register</button>
+    <p id="registerError"></p>
+</div>
+
+    <div id="dashboardView" style="display: none;">
+
+    <h2>Dashboard</h2>
+
+    <button type="button" id="logoutBtn">Logout</button>
+
+    <!-- ✅ MANAGER CONTROLS -->
+    <div id="managerControls" style="display: none;">
+
+        <h3>Create Task</h3>
+
+        <input id="taskTitle" placeholder="Title">
+        <input id="taskDescription" placeholder="Description">
+        <input id="taskAssignedTo" placeholder="Assign To (User ID)">
+        <input id="taskDeadline" type="datetime-local">
+
+        <button type="button" id="createTaskBtn">Create Task</button>
+
+    </div>
+
+    <div id="sortControls">
+        <button type="button" id="sortDeadline">Sort by Deadline</button>
+        <button type="button" id="sortStatus">Sort by Status</button>
+    </div>
+
+    <!-- ✅ TASK LIST -->
+    <div id="taskContainer"></div>
+    
+    <div id="paginationControls">
+        <button type="button" id="prevBtn">⬅ Prev</button>
+        <span id="pageInfo"></span>
+        <button type="button" id="nextBtn">Next ➡</button>
+    </div>
+
+</div>
+    <script src="app.js"></script>
+    
+
+</body>
+</html>

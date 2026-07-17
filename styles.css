@@ -1,0 +1,107 @@
+/* ✅ Task Container Layout */
+
+#taskContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+
+/* ✅ Task Card */
+
+.task-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+
+/* ✅ Task Title (Primary Visual Anchor) */
+
+.task-title {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+}
+
+
+/* ✅ Task Metadata */
+
+.task-meta {
+    font-size: 14px;
+    color: #555;
+    margin: 4px 0;
+}
+
+
+/* ✅ Buttons inside Task Cards */
+
+.task-card button {
+    margin-top: 10px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #2d72d9;
+    color: white;
+    font-size: 14px;
+}
+
+.task-card button:hover {
+    background: #1b5bbf;
+}
+
+#paginationControls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.status {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status-created {
+    background: #eef2ff;
+    color: #3b5bdb;
+}
+
+.status-in_progress {
+    background: #e7f5ff;
+    color: #1971c2;
+}
+
+.status-completed {
+    background: #fff4e6;
+    color: #f08c00;
+}
+
+.status-reviewed {
+    background: #ebfbee;
+    color: #2b8a3e;
+}
+
+.deadline-overdue {
+    color: #d63031;
+    font-weight: 600;
+}
+
+.deadline-urgent {
+    color: #f39c12;
+    font-weight: 600;
+}
+
+.deadline-safe {
+    color: #2b8a3e;
+}
+
+
+#sortControls {
+    margin-bottom: 15px;
+}
