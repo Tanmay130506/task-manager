@@ -60,9 +60,9 @@ class User(Base):
     role = Column(String)
 
 
-@app.get("/")
-def root():
-    return {"message": "Task Manager API Running"}
+# @app.get("/")
+# def root():
+#     return {"message": "Task Manager API Running"}
 
 
 def add_user(db, username, password, role):
